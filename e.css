@@ -1,0 +1,63 @@
+@keyframes around {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 240px;
+    top: 0;
+  }
+  50% {
+    left: 240px;
+    top: 140px;
+  }
+  75% {
+    left: 0;
+    top: 140px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.p {
+  animation: around 4s linear 0s infinite;
+  background: turquoise;
+  color: white;
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  width: 60px;
+}
+
+
+#digit {
+  width: .5em;
+  overflow: hidden;
+  font: 32px monospace;
+  cursor: pointer;
+}
+
+#stripe {
+  display: inline-block
+}
+
+#stripe.animate {
+  transform: translate(-100%);
+  transition-property: transform;
+  transition-duration: 9s;
+  transition-timing-function: linear;
+
+}
+
+.cat {
+  margin: auto;
+  display: block;
+  box-shadow: 10px solid rgb(247, 247, 247); 
+  border-radius: 10px;
+      
+}
+* {margin: auto;}
